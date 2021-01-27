@@ -3,7 +3,8 @@
 https://beta.developer.spotify.com/console/
 
 luego a dashboard
-
+# token
+    en assets hay una imagen llamada postman que muestra como traer el token con el metodo post
 # Peticiones http
 
 para probar
