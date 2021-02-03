@@ -9,7 +9,8 @@ import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HttpClientModule} from '@angular/common/http';
 import { NoimagePipe } from './pipe/noimage.pipe';
-import { TarjetasComponent } from './components/tarjetas/tarjetas.component'
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component'
     ArtistaComponent,
     NavbarComponent,
     NoimagePipe,
-    TarjetasComponent
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
