@@ -8,7 +8,8 @@ import { SearchComponent } from './components/search/search.component';
 import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HttpClientModule} from '@angular/common/http';
-import { NoimagePipe } from './pipe/noimage.pipe'
+import { NoimagePipe } from './pipe/noimage.pipe';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { NoimagePipe } from './pipe/noimage.pipe'
     SearchComponent,
     ArtistaComponent,
     NavbarComponent,
-    NoimagePipe
+    NoimagePipe,
+    TarjetasComponent
   ],
   imports: [
     BrowserModule,

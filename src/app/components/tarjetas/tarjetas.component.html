@@ -1,0 +1,12 @@
+<div class="col s12 m4" *ngFor="let item of items">
+    <div class="card">
+      <div class="card-image" style="height: 500px !important;">
+        <img [src]="item.images | noimage">
+        <span class="card-title" style="color: rgb(255, 255, 255); font-weight: 700; background-color: rgba(0, 0, 0, 0.548); border-radius: 0px 50px 0px 0px;">{{item.name}}</span>
+        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">play_arrow</i></a>
+      </div>
+      <div class="card-content" style="height: 150px;">
+          <div class="chip" *ngFor="let artist of item.artists">{{artist.name}}</div>
+      </div>
+    </div>
+  </div>
