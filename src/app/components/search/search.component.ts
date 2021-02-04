@@ -19,7 +19,7 @@ export class SearchComponent implements OnInit {
   buscar(termino:string){
     this.loading = true;
     console.log(termino);
-    this._spotify.getArtista(termino).subscribe((resp:any)=>{
+    this._spotify.getArtistas(termino).subscribe((resp:any)=>{
       setTimeout(() => {
         console.log(resp);
         this.artistas = resp;
