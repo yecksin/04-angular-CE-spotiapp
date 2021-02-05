@@ -10,6 +10,8 @@ import { SpotifyService } from '../../services/spotify.service';
 export class HomeComponent implements OnInit {
   nuevasCanciones:any[]=[];
   loading: boolean;
+  error=false;
+  mensajeError='';
   constructor(
     private http:HttpClient,
     private _spotifyService:SpotifyService
@@ -27,8 +29,13 @@ export class HomeComponent implements OnInit {
         console.log(data);
         this.nuevasCanciones = data;
         this.loading = false;
-      }, 3000);
+      }, 1000);
 
+    },(errorServicio)=>{
+      this.error =true;
+      this.loading = false;
+      console.log(errorServicio);
+      this.mensajeError = errorServicio.error.error.message;
     });
   }
 

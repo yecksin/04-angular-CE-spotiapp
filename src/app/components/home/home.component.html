@@ -1,4 +1,12 @@
 <app-loading *ngIf="loading"></app-loading>
+
+<div *ngIf="error" class="mensajeError red darken-2 z-depth-4" style="padding: 20px 50px; border-radius: 10px; margin: 20px 0px;">
+  <h3 style="margin: 0;">Error</h3>
+  <p>{{mensajeError}}</p>
+</div>
+
+
 <div class="row" *ngIf="!loading">
   <app-tarjetas [items]="nuevasCanciones"></app-tarjetas>
 </div>
+

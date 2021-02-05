@@ -10,7 +10,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HttpClientModule} from '@angular/common/http';
 import { NoimagePipe } from './pipe/noimage.pipe';
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
-import { LoadingComponent } from './components/shared/loading/loading.component'
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { DomseguroPipe } from './pipe/domseguro.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     NavbarComponent,
     NoimagePipe,
     TarjetasComponent,
-    LoadingComponent
+    LoadingComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,
